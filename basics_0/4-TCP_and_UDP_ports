@@ -7,7 +7,7 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 echo "Active Internet connections (only servers)"
-ss -tulnmp | grep LISTEN
-
+netstat -tulnp | grep LISTEN
+echo ""
 echo "Active UNIX domain sockets (only servers)"
-ss -xlnmp | grep LISTEN
+netstat -lxp | grep LISTEN
