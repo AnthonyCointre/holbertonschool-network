@@ -1,13 +1,4 @@
 #!/usr/bin/env bash
 # A Bash script that displays listening ports.
 
-if [ "$EUID" -ne 0 ]; then
-  echo "Please run as root"
-  exit
-fi
-
-echo "Active Internet connections (only servers)"
-netstat -tulnp | grep LISTEN
-echo ""
-echo "Active UNIX domain sockets (only servers)"
-netstat -lxp | grep LISTEN
+netstat -lpn
