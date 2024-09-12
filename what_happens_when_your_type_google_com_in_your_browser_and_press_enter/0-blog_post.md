@@ -2,6 +2,9 @@
 
 When you type https://www.google.com in your browser and hit Enter, a complex series of events takes place behind the scenes to deliver the content you requested. This journey involves various components of the web stack, each playing a crucial role. Below, we'll break down the process step by step.
 
+## 0. Diagram
+![Diagram](https://github.com/AnthonyCointre/holbertonschool-network/tree/main/what_happens_when_your_type_google_com_in_your_browser_and_press_enter/1-what_happen_when_diagram.jpg)
+
 ## 1. DNS Request
 The first thing that happens is a DNS (Domain Name System) request. The DNS is like the phonebook of the internet. When you type a human-readable URL like www.google.com, your browser needs to translate that into an IP address (a numerical label like 172.217.3.110) that servers use to identify each other.
 
